@@ -13,18 +13,22 @@ public class AppTest {
 
 	@BeforeClass
 	public static void BeforeClass() throws Exception {
+		System.out.println("BeforeClass method will be executed before first test method starts");
 	}
 
 	@AfterClass
 	public static void AfterClass() throws Exception {
+		System.out.println("AfterClass method will be executed after last test method completed");
 	}
 
 	@Before
 	public void BeforeTest() throws Exception {
+		System.out.println("Before method will execute before every test method");
 	}
 
 	@After
 	public void AfterTest() throws Exception {
+		System.out.println("After method will execute after every test method");
 	}
 
 	@Test
